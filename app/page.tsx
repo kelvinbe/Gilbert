@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
+    <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900  dark:text-zinc-50">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-black/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
