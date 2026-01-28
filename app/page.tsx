@@ -2,60 +2,137 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900  dark:text-zinc-50">
+    <div className="min-h-screen font-sans text-zinc-900">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-black/80">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <h1 className="text-xl font-bold tracking-tight">
-            Gimo24 <span className="text-orange-500">Construction</span>
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <h1 className="text-xl font-bold">
+            Gimo24 <span className="text-yellow-500">Construction</span>
           </h1>
 
-          <nav className="hidden gap-6 text-sm font-medium sm:flex">
-            <a href="#services" className="hover:text-orange-500">Services</a>
-            <a href="#projects" className="hover:text-orange-500">Projects</a>
-            <a href="#about" className="hover:text-orange-500">About</a>
-            <a href="#contact" className="hover:text-orange-500">Contact</a>
+          <nav className="hidden gap-8 text-sm font-medium md:flex">
+            <a href="#" className="hover:text-yellow-500">Home</a>
+            <a href="#about" className="hover:text-yellow-500">About Us</a>
+            <a href="#projects" className="hover:text-yellow-500">Project</a>
+            <a href="#services" className="hover:text-yellow-500">Service</a>
+            <a href="#team" className="hover:text-yellow-500">Our Team</a>
           </nav>
+
+          <a
+            href="#contact"
+            className="rounded-md bg-yellow-500 px-5 py-2 text-sm font-semibold text-black hover:bg-yellow-600"
+          >
+            Connect
+          </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-24 text-center sm:text-left">
-        <div className="flex flex-col gap-6 sm:max-w-3xl">
-          <h2 className="text-4xl font-bold leading-tight sm:text-5xl">
-            Building Strong Foundations for the Future
-          </h2>
-          <p className="text-lg text-zinc-600 dark:text-zinc-400">
-            Gimo24 Construction Company delivers high-quality residential,
-            commercial, and infrastructure projects with precision, integrity,
-            and excellence.
-          </p>
+      <section className="bg-[#1f2b33]">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-24 md:grid-cols-2">
+          {/* Text */}
+          <div>
+            <h2 className="mb-6 text-4xl font-extrabold leading-tight text-yellow-400 md:text-5xl">
+              We Build Something <br /> New And Consistent.
+            </h2>
+            <p className="mb-8 max-w-lg text-zinc-300">
+              Your ideas & dreams are transformed by us into long-lasting,
+              engineered buildings with quality and precision.
+            </p>
 
-          <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex gap-4">
+              <a
+                href="#contact"
+                className="rounded-md bg-yellow-500 px-6 py-3 font-semibold text-black hover:bg-yellow-600"
+              >
+                Get Start
+              </a>
+              <a
+                href="#services"
+                className="rounded-md border border-yellow-500 px-6 py-3 font-semibold text-yellow-400 hover:bg-yellow-500 hover:text-black"
+              >
+                Our Service
+              </a>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="relative">
+            <Image
+              src="/imgggg.jpg" // replace with your image
+              alt="Construction Worker"
+              width={500}
+              height={500}
+              className="mx-auto"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome Section */}
+      <section id="about" className="bg-white py-20">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
+          {/* Text */}
+          <div>
+            <h3 className="mb-4 text-3xl font-bold">
+              Welcome To Construction <br /> Real Solution.
+            </h3>
+            <p className="mb-6 text-zinc-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <ul className="mb-8 space-y-3 text-sm text-zinc-600">
+              <li>✔ Professional & Certified Engineers</li>
+              <li>✔ Quality Materials & Workmanship</li>
+              <li>✔ Timely Project Delivery</li>
+              <li>✔ Safety & Compliance Guaranteed</li>
+            </ul>
+
             <a
-              href="#contact"
-              className="rounded-full bg-orange-500 px-8 py-3 font-medium text-white transition hover:bg-orange-600"
+              href="#about"
+              className="inline-flex items-center gap-2 rounded-md bg-yellow-500 px-6 py-3 font-semibold text-black hover:bg-yellow-600"
             >
-              Get a Quote
+              Read More →
             </a>
-            <a
-              href="#projects"
-              className="rounded-full border border-zinc-300 px-8 py-3 font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
-            >
-              View Projects
-            </a>
+          </div>
+
+          {/* Images */}
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/nyumbaaa.jpg"
+              alt="Construction Site"
+              width={300}
+              height={200}
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src="/mmm.jpg"
+              alt="Building Project"
+              width={300}
+              height={200}
+              className="rounded-lg object-cover"
+            />
+            <Image
+              src="/aaaaa.jpg"
+              alt="Infrastructure"
+              width={300}
+              height={200}
+              className="col-span-2 rounded-lg object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-white py-20 dark:bg-black">
-        <div className="mx-auto max-w-6xl px-6">
-          <h3 className="mb-12 text-center text-3xl font-semibold">
-            Our Services
+      <section id="services" className="bg-zinc-100 py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h3 className="mb-12 text-center text-3xl font-bold">
+            We Provide Services
           </h3>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-4">
             {[
               "Residential Construction",
               "Commercial Buildings",
@@ -64,11 +141,11 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service}
-                className="rounded-2xl border border-zinc-200 p-6 shadow-sm transition hover:shadow-md dark:border-zinc-800"
+                className="rounded-lg bg-white p-6 text-center shadow hover:shadow-lg"
               >
-                <h4 className="mb-2 text-lg font-semibold">{service}</h4>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                  High-quality workmanship delivered by experienced professionals.
+                <h4 className="mb-2 font-semibold">{service}</h4>
+                <p className="text-sm text-zinc-600">
+                  High-quality construction services delivered by experts.
                 </p>
               </div>
             ))}
@@ -76,46 +153,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="bg-zinc-100 py-20 dark:bg-zinc-950">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h3 className="mb-6 text-3xl font-semibold">About Gimo24</h3>
-          <p className="text-lg text-zinc-700 dark:text-zinc-400">
-            Gimo24 Construction Company is committed to delivering reliable,
-            cost-effective, and durable construction solutions. Our mission is
-            to exceed client expectations through innovation, safety, and
-            professional excellence.
-          </p>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section id="contact" className="py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h3 className="mb-6 text-3xl font-semibold">Contact Us</h3>
-          <p className="mb-8 text-zinc-600 dark:text-zinc-400">
-            Ready to start your project? Reach out to us today.
-          </p>
-
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <a
-              href="mailto:info@gimo24construction.com"
-              className="rounded-full bg-orange-500 px-8 py-3 font-medium text-white transition hover:bg-orange-600"
-            >
-              Email Us
-            </a>
-            <a
-              href="tel:+254700000000"
-              className="rounded-full border border-zinc-300 px-8 py-3 font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
-            >
-              Call Us
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="border-t border-zinc-200 py-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
+      <footer className="bg-[#1f2b33] py-6 text-center text-sm text-zinc-400">
         © {new Date().getFullYear()} Gimo24 Construction Company. All rights reserved.
       </footer>
     </div>
