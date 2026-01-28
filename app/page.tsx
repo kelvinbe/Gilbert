@@ -57,13 +57,13 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative rounded-full">
             <Image
               src="/imgggg.jpg" // replace with your image
               alt="Construction Worker"
               width={500}
               height={500}
-              className="mx-auto"
+              className="mx-auto relative rounded-full "
               priority
             />
           </div>
