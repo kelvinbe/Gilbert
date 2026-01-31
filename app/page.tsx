@@ -59,7 +59,7 @@ export default function Home() {
           {/* Image */}
           <div className="relative rounded-full">
             <Image
-              src="/imgggg.jpg" // replace with your image
+              src="/gil.JPG" // replace with your image
               alt="Construction Worker"
               width={500}
               height={500}
