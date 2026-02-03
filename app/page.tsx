@@ -146,7 +146,7 @@ export default function Home() {
               >
                 <h4 className="mb-2 font-semibold">{service}</h4>
                 <p className="text-sm text-zinc-600">
-                  High-quality construction services delivered by experts.
+                  High-quality construction services delivered by experts..
                 </p>
               </div>
             ))}
