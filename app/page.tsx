@@ -33,7 +33,7 @@ export default function Home() {
           {/* Text */}
           <div>
             <h2 className="mb-6 text-3xl font-extrabold leading-tight text-yellow-400 md:text-5xl">
-            Gimo24 Construction Company 
+            Gimo24 Construction Company.
             </h2>
             <p className="mb-8 max-w-lg text-zinc-300 text-2xl">
               Building Dreams,offering building solutions & Creating Value!
