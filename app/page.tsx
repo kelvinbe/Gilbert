@@ -32,12 +32,11 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-24 md:grid-cols-2">
           {/* Text */}
           <div>
-            <h2 className="mb-6 text-4xl font-extrabold leading-tight text-yellow-400 md:text-5xl">
-              We Build Something <br /> New And Consistent.
+            <h2 className="mb-6 text-3xl font-extrabold leading-tight text-yellow-400 md:text-5xl">
+            Gimo24 Construction Company 
             </h2>
-            <p className="mb-8 max-w-lg text-zinc-300">
-              Your ideas & dreams are transformed by us into long-lasting,
-              engineered buildings with quality and precision.
+            <p className="mb-8 max-w-lg text-zinc-300 text-2xl">
+              Building Dreams,offering building solutions & Creating Value!
             </p>
 
             <div className="flex gap-4">
@@ -84,10 +83,11 @@ export default function Home() {
             </p>
 
             <ul className="mb-8 space-y-3 text-sm text-zinc-600">
-              <li>✔ Professional & Certified Engineers</li>
-              <li>✔ Quality Materials & Workmanship</li>
-              <li>✔ Timely Project Delivery</li>
-              <li>✔ Safety & Compliance Guaranteed</li>
+              <li>✔ Residential & Commercial Construction</li>
+              <li>✔ Roofing (Specialists in Decra & Timber structures)</li>
+              <li>✔  Renovations & Extensions</li>
+              <li>✔ Architectural Design & Consultation</li>
+              <li>✔ Site Supervision & Project Management</li>
             </ul>
 
             <a
@@ -134,10 +134,11 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-4">
             {[
-              "Residential Construction",
-              "Commercial Buildings",
-              "Roads & Infrastructure",
-              "Renovation & Maintenance",
+           "Residential & Commercial Construction",
+            "Roofing (Specialists in Decra & Timber structures)",
+            "Renovations & Extensions",
+            "Architectural Design & Consultation",
+            "Site Supervision & Project Management"
             ].map((service) => (
               <div
                 key={service}
